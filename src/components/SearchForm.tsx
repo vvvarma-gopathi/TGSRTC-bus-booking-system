@@ -3,7 +3,7 @@ import { Search, MapPin, Calendar, ArrowRight, Hash } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"; 
 
 interface SearchFormProps {
   onSearch: (searchData: SearchData) => void;
