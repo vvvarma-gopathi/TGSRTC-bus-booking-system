@@ -1,73 +1,31 @@
-# Welcome to your Lovable project
+TGSRTC Bus Booking UI - React
+A React-based frontend clone for the TGSRTC (Telangana State Road Transport Corporation) booking system. This is a clean, modular SPA designed to handle the end-to-end user flow from route searching to passenger detail collection.
 
-## Project info
+Features
+SPA Architecture: Fast, client-side routing for a seamless booking experience without page reloads.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Smart Search: Filter buses by Source/Destination or directly via Service Number.
 
-## How can I edit this code?
+Dynamic Booking Engine: Support for multiple ticket bookings in a single session.
 
-There are several ways of editing your application.
+State-Driven Forms: All inputs use controlled components with real-time validation logic.
 
-**Use Lovable**
+Modular Component Library: High reusability with decoupled components for seats, bus cards, and passenger inputs.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+ Tech Stack
+Core: React 18+
 
-Changes made via Lovable will be committed automatically to this repo.
+State Management: React Hooks (useState, useEffect, useContext)
 
-**Use your preferred IDE**
+Styling: CSS Modules / Tailwind (Standard CSS for UI consistency)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Icons: React Icons / Lucide
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Form Logic & Validation
+The passenger detail collection uses a dynamic array in state. Each form field is validated against:
 
-Follow these steps:
+Regex checks for names and contact info.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Conditional rendering for age-specific seat requirements.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Error state tracking to prevent submission on invalid inputs.
