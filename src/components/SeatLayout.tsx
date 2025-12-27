@@ -18,7 +18,6 @@ interface SeatLayoutProps {
 }
 
 const SeatLayout = ({ bus, onSeatsSelected, selectedSeats }: SeatLayoutProps) => {
-  // Generate seat layout (2+2 configuration with aisle)
   const generateSeats = (): Seat[] => {
     const seats: Seat[] = [];
     const rows = 10;
